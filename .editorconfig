@@ -1,0 +1,3 @@
+[*.java]
+charset = utf-8
+trim_trailing_whitespace = true
