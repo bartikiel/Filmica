@@ -54,13 +54,16 @@
 
 ### Wybrane technologie
 
-####Java 
+**Java**
+
 Filmica zostanie wykonana w języku programowania Java, jako aplikacja konsolowa (bez graficznego interfejsu użytkownika). 
 
-####Gitlab
+**Gitlab**
+
 Do zarządzania kodem projektu oraz śledzenia historii zmian będziemy wykorzystywali platformę Gitlab. 
 
-####IDE
+**IDE**
+
 Jako środowisko programistyczne wybraliśmy IntelliJ IDEA Community Edition.
 
 ## Uruchamianie aplikacji do celów developerskich
