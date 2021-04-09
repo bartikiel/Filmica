@@ -64,7 +64,7 @@ Do zarządzania kodem projektu oraz śledzenia historii zmian będziemy wykorzys
 
 **IDE**
 
-Jako środowisko programistyczne wybraliśmy IntelliJ IDEA Community Edition.
+Jako środowisko programistyczne wybraliśmy IntelliJ IDEA Community Edition. <3
 
 ## Uruchamianie aplikacji do celów developerskich
 1. Aplikacja została założona jako projekt prywatny, więc należy ubiegać się u właściciela projektu bądź członków drużyny o dostęp do repozytorium.
