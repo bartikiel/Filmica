@@ -8,7 +8,7 @@
 
 **Uczelnia:** Wyższa Szkoła Ekonomiczna w Białymstoku
 
-**Drużyna:** Karolina Czochańska, Łukasz Zubrzycki, Bartosz Kiełczewski
+**Drużyna:** Karolina Czochańska, Łukasz Zubrzycki, Bartosz Kiełczewski :)
 
 ## Podstawowe informacje
 
