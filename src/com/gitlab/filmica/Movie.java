@@ -8,17 +8,16 @@ public class Movie {
     private String title;
     private String director;
     private int duration;
-    private Short ageRating;
+    private AgeRating ageRating;
 
-    //Constructor
-    public Movie(String title, String director, Integer duration, Short ageRating) {
+    public Movie( String title, String director, int duration, AgeRating ageRating ) {
         this.title = title;
         this.director = director;
         this.duration = duration;
         this.ageRating = ageRating;
+
     }
 
-    //Getter Methods
     public UUID getId() {
         return id;
     }
@@ -35,7 +34,23 @@ public class Movie {
         return duration;
     }
 
-    public Short getAgeRating() {
-        return ageRating;
+    public String  getAgeRating(){
+        return ageRating.getDescription();
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setAgeRating(AgeRating ageRating) {
+        this.ageRating = ageRating;
     }
 }

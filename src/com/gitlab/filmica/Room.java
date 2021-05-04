@@ -2,21 +2,29 @@ package com.gitlab.filmica;
 
 public class Room {
 
-    String name;
-    int numberOfSeats;
+    private String name;
+    private int numberOfSeats;
 
-    //Constructor
+
     public Room(String name, int numberOfSeats) {
         this.name = name;
         this.numberOfSeats = numberOfSeats;
     }
 
-    //Getter Methods
+
     public String getName() {
         return name;
     }
 
     public int getNumberOfSeats() {
         return numberOfSeats;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
     }
 }
