@@ -1,4 +1,4 @@
-package com.gitlab.filmica.model;
+package com.gitlab.filmica.menu;
 
 
 import java.util.Scanner;

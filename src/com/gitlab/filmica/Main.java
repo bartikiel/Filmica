@@ -1,6 +1,6 @@
 package com.gitlab.filmica;
 
-import com.gitlab.filmica.model.MainMenu;
+import com.gitlab.filmica.menu.MainMenu;
 
 public class Main {
 
