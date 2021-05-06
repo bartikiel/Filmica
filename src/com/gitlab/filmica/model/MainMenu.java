@@ -1,4 +1,6 @@
-package com.gitlab.filmica;
+package com.gitlab.filmica.model;
+
+import com.gitlab.filmica.model.AdminMenu;
 
 import java.util.Scanner;
 
