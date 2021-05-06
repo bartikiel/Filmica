@@ -14,7 +14,7 @@ public class AdminMenu {
         int userInput = -1;
 
         //Admin menu
-        System.out.println("Menu: \n" +
+        System.out.println("Panel Administratora: \n" +
                 "0- Wyjdź z programu \n" +
                 "1- Wróć do menu głównego \n" +
                 "2- Pokaż sprzedane bilety \n" +
@@ -30,7 +30,7 @@ public class AdminMenu {
                 switch (userInput) {
                     case 0:
                         System.out.println("Do widzenia!");
-                        break;
+                        System.exit(0);
                     case 1:
                         MainMenu.run();
                         break;

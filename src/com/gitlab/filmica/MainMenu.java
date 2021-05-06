@@ -29,9 +29,10 @@ public class MainMenu {
                 switch (userInput) {
                     case 0:
                         System.out.println("Do widzenia!");
+                        System.exit(0);
                         break;
                     case 1:
-                        AdminMenu.run ();
+                        AdminMenu.run();
                         break;
                     case 2:
                         System.out.println("Kino Filmica sp. z o.o. \n" +  "15-703 Białystok \n" + "ul. Zwycięstwa 14/3 \n" + "tel. 000-000-000 \n ");
