@@ -1,4 +1,4 @@
-package com.gitlab.filmica;
+package com.gitlab.filmica.model;
 
 import java.util.UUID;
 
