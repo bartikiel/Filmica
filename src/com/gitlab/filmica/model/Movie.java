@@ -10,13 +10,13 @@ public class Movie {
     private int duration;
     private AgeRating ageRating;
 
+
     public Movie( UUID id, String title, String director, int duration, AgeRating ageRating ) {
         this.id = id;
         this.title = title;
         this.director = director;
         this.duration = duration;
         this.ageRating = ageRating;
-
     }
 
     public UUID getId() {
