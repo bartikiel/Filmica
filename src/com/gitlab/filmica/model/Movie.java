@@ -56,6 +56,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return title + ", " + director + ", " + duration + ", " + ageRating;
+        return "ID: "+ id + ",\nTitle: " + title + ",\nDirector: " + director + ",\nDuration: " + duration + ",\nRating: " + ageRating + " - " + ageRating.getDescription() + "\n";
     }
 }

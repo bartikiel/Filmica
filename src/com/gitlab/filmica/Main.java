@@ -7,6 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 //        MainMenu.run();
-        CSVreader.movies();
+        CSVreader.movies().forEach(System.out::println);
     }
 }
