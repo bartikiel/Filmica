@@ -2,6 +2,8 @@ package com.gitlab.filmica.csv;
 
 import com.gitlab.filmica.model.AgeRating;
 import com.gitlab.filmica.model.Movie;
+import com.gitlab.filmica.model.Repertoire;
+import com.gitlab.filmica.model.Room;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -37,8 +39,25 @@ public class CSVreader {
         } catch (IOException ioe) {
             System.err.println("Wystąpił błąd I/O podczas wykonywania readLine()");
         }
-
         return movies;
+    }
+
+    public static ArrayList<Room> rooms() {
+        ArrayList<Room> rooms = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("data/rooms.csv"))) {
+            while ((line = reader.readLine()) != null) {
+                String[] room = line.split(splitBy);
+                rooms.add(new Room(room[0], Integer.parseInt(room[1].trim())));
+            }
+        } catch (FileNotFoundException fnfe) {
+            System.err.println("Próba otwarcia pliku z podanej ścieżki nie powiodła się.");
+        } catch (NumberFormatException nfe) {
+            System.err.println("Wystąpił błąd podczas zmiany wartości czasu trwania filmu ze String na Integer.");
+        } catch (IOException ioe) {
+            System.err.println("Wystąpił błąd I/O podczas wykonywania readLine()");
+        }
+        return rooms;
     }
 
 }

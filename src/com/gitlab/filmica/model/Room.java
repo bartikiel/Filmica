@@ -27,4 +27,9 @@ public class Room {
     public void setNumberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
     }
+
+    @Override
+    public String toString() {
+        return "Nazwa sali: "+ name + ",\nIlość miejsc: " + numberOfSeats + "\n";
+    }
 }
