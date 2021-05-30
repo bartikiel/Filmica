@@ -53,4 +53,9 @@ public class Movie {
     public void setAgeRating(AgeRating ageRating) {
         this.ageRating = ageRating;
     }
+
+    @Override
+    public String toString() {
+        return title + ", " + director + ", " + duration + ", " + ageRating;
+    }
 }
