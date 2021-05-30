@@ -56,6 +56,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "ID: "+ id + ",\nTytuł: " + title + ",\nReżyser: " + director + ",\nCzas trwania: " + duration + ",\nKlasyfikacja wiekowa: " + ageRating + " - " + ageRating.getDescription() + "\n";
+        return "ID: "+ id + ",\nTytuł: " + title + ",\nReżyser: " + director + ",\nCzas trwania: " + duration + "min,\nKlasyfikacja wiekowa: " + ageRating + " - " + ageRating.getDescription();
     }
 }

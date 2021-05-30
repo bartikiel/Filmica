@@ -39,4 +39,9 @@ public class Showing {
     public void setRoom(Room room) {
         this.room = room;
     }
+
+    @Override
+    public String toString() {
+        return "Data: "+ date + "\nSala:\n" + room + "\nFilm:\n" + movie;
+    }
 }

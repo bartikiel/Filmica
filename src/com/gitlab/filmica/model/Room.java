@@ -30,6 +30,6 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Nazwa sali: "+ name + ",\nIlość miejsc: " + numberOfSeats + "\n";
+        return "Nazwa sali: "+ name + ",\nIlość miejsc: " + numberOfSeats;
     }
 }
