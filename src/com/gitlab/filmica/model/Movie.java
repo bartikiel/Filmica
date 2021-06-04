@@ -10,7 +10,8 @@ public class Movie {
     private int duration;
     private AgeRating ageRating;
 
-    public Movie( String title, String director, int duration, AgeRating ageRating ) {
+    public Movie( UUID id, String title, String director, int duration, AgeRating ageRating ) {
+        this.id = id;
         this.title = title;
         this.director = director;
         this.duration = duration;
@@ -52,5 +53,10 @@ public class Movie {
 
     public void setAgeRating(AgeRating ageRating) {
         this.ageRating = ageRating;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: "+ id + ",\nTytuł: " + title + ",\nReżyser: " + director + ",\nCzas trwania: " + duration + "min,\nKlasyfikacja wiekowa: " + ageRating + " - " + ageRating.getDescription();
     }
 }

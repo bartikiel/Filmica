@@ -1,6 +1,7 @@
 package com.gitlab.filmica.model;
 
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Showing {
 
@@ -39,4 +40,12 @@ public class Showing {
     public void setRoom(Room room) {
         this.room = room;
     }
+
+    @Override
+    public String toString() {
+        var formattedDate = date.format(DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss"));
+        return "Termin seansu: "+ formattedDate + "\nSala:\n" + room + "\nFilm:\n" + movie;
+    }
 }
+
+
