@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.Writer;
 
 public class CSVwriter {
+    // To jest Twój poprzedni plik - zmieniłam mu nazwę :)
     public static void main(String[] args) {
         try {
             Writer w = new FileWriter ("movie.csv");
