@@ -1,6 +1,11 @@
 package com.gitlab.filmica.menu;
 
 
+import com.gitlab.filmica.csv.CSVreader;
+import com.gitlab.filmica.model.Movie;
+import com.gitlab.filmica.model.Repertoire;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -20,7 +25,8 @@ public class AdminMenu {
                 "2- Pokaż sprzedane bilety \n" +
                 "3- Dodaj film \n" +
                 "4- Usuń film \n" +
-                "5- Edytuj repertuar \n");
+                "5- Edytuj repertuar \n" +
+                "6- Wyświetl wszystkie filmy");
         System.out.println("Dokonaj wyboru z powyższych opcji: \n");
 
         while (userInput != 0){
@@ -45,6 +51,12 @@ public class AdminMenu {
                         break;
                     case 5:
                         System.out.println("Edytuję repertuar");
+                        break;
+                    case 6:
+                        System.out.println("Wyświetlanie wszystkich filmów");
+                        ArrayList<Movie> movies = CSVreader.movies();
+                        ArrayList<Repertoire> repertoires = CSVreader.repertoire();
+                        CSVreader.viewAllMovies(movies,repertoires);
                         break;
 
                     default:

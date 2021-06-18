@@ -155,4 +155,14 @@ public class CSVreader {
         return repertoires;
     }
 
+    public static void viewAllMovies(ArrayList<Movie> movies, ArrayList<Repertoire> repertoires ){
+        for(Movie movie : movies){
+            System.out.println(movie.toString());
+        }
+
+        for(Repertoire repertoire : repertoires){
+            System.out.println(repertoire.toString());
+        }
+    }
+
 }

@@ -55,6 +55,8 @@ public class Movie {
         this.ageRating = ageRating;
     }
 
+
+
     @Override
     public String toString() {
         return "ID: "+ id + ",\nTytuł: " + title + ",\nReżyser: " + director + ",\nCzas trwania: " + duration + "min,\nKlasyfikacja wiekowa: " + ageRating + " - " + ageRating.getDescription();
