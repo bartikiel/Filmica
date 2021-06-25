@@ -1,7 +1,11 @@
 package com.gitlab.filmica.model;
 
-import java.time.OffsetDateTime;
+import com.gitlab.filmica.csv.CSVreader;
+
+import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 public class Showing {
 
@@ -39,6 +43,26 @@ public class Showing {
 
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public Collection<Showing> getShowingsByDate(LocalDate date) {
+        ZoneId zone = ZoneId.of("Europe/Warsaw");
+        LocalDateTime thisDay = date.atStartOfDay();
+        LocalDateTime nextDay = thisDay.plusDays(1);
+
+        OffsetDateTime thisDayParsed = thisDay.atZone(zone)
+                .toOffsetDateTime()
+                .withOffsetSameInstant(ZoneOffset.UTC);
+
+        OffsetDateTime nextDayParsed = nextDay.atZone(zone)
+                .toOffsetDateTime()
+                .withOffsetSameInstant(ZoneOffset.UTC);
+
+        Collection<Showing> showings = CSVreader.showings().stream()
+                .filter(it -> it.getDate().isAfter(thisDayParsed) && it.getDate().isBefore(nextDayParsed))
+                .collect(Collectors.toList());
+
+        return showings;
     }
 
     @Override

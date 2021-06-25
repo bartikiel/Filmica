@@ -1,5 +1,6 @@
 package com.gitlab.filmica.menu;
 
+import com.gitlab.filmica.actions.MenuActions;
 import com.gitlab.filmica.menu.AdminMenu;
 
 import java.util.Scanner;
@@ -43,7 +44,7 @@ public class MainMenu {
                         System.out.println("Dostępne filmy");
                         break;
                     case 4:
-                        System.out.println("Dostępny repertuar");
+                        MenuActions.displayRepertoire();
                         break;
 
                     default:
